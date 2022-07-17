@@ -1,0 +1,111 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+:root{
+  --red: #F23005;
+  --blue: #049DD9 ;
+  --orange: #F24F13 ;
+  --grey: #404040 ;
+  --white : #D9CCCC ;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Open Sans', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  color: var(--grey);
+  background-color: var(--white);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+.main *{
+  margin: 5px 0;
+}
+.input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+.li{
+  display: inline;
+  list-style: disc;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding: auto;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  margin: 10px auto;
+  width: 100%;
+  list-style: circle;
+  background-color: var(--grey);
+  color: white;
+  border-radius: 5px;
+}
+.btn{
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  background-color: var(--blue);
+  color: white;
+}
+.btn-danger{
+  background-color: var(--red);
+  font-weight: 700;
+  color: white;
+  width: 100px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
