@@ -36,6 +36,10 @@ body {
   font-size: 1.6rem;
   color: var(--grey);
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /******************************************
@@ -71,7 +75,7 @@ body {
   padding: 5px;
 }
 .li{
-  display: inline-block;
+  display: block;
   margin: auto;
   width: 100%;
   padding-top: 5%;
@@ -96,7 +100,7 @@ body {
   width: 100%;
   border: none;
   border-radius: 5px;
-  list-style: disc inside;
+/*   list-style: disc inside; */
   color: white;
 }
 .btn{
@@ -114,7 +118,11 @@ body {
   color: white;
   width: 100px;
 }
-
+.footer{
+  display: inline-block;
+  margin: auto;
+  align-self: flex-end;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
