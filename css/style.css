@@ -59,6 +59,10 @@ body {
 .main *{
   margin: 5px 0;
 }
+.header h1{
+  font-weight: 700;
+  font-size: 3.5rem;
+}
 .input{
   width: 100%;
   outline: none;
@@ -67,15 +71,20 @@ body {
   padding: 5px;
 }
 .li{
-  display: inline;
-  list-style: disc;
+  display: inline-block;
   margin: auto;
   width: 100%;
-  text-align: center;
+  padding-top: 5%;
+  text-align: left;
   padding: auto;
-  height: 30px;
+  padding-left: 15px;
+  height: 50px;
   border-radius: 5px;
   margin: 5px 0;
+  background-color: var(--grey);
+  color: white;
+  font-weight: 400;
+  list-style: inherit;
 }
 .list{
   display: flex;
@@ -85,10 +94,10 @@ body {
   padding: 20px 0;
   margin: 10px auto;
   width: 100%;
-  list-style: circle;
-  background-color: var(--grey);
-  color: white;
+  border: none;
   border-radius: 5px;
+  list-style: disc inside;
+  color: white;
 }
 .btn{
   outline: none;
